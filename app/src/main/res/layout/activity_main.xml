@@ -1,178 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FF018856"
-    android:fillViewport="true"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/tarefa1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tarefa 1"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:layout_marginTop="100dp"
-            />
-        <TextView
-            android:id="@+id/textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Veja aqui"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Escreva aqui"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            />
-        <EditText
-            android:id="@+id/edittext"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            />
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Substituir"
-            android:layout_marginTop="20dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Tarefa 2"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:layout_marginTop="100dp"
-            />
+        android:text="tarefa 1"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:id="@+id/tarefa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tarefa 2"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:id="@+id/tarefa2exercicio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tarefa 2 exerc2"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Insira seu Telefone"
-            android:textSize="25dp"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            />
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:inputType="phone"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Insira uma senha"
-            android:textSize="25dp"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            />
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:inputType="textPassword"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Insira um texto com auto-correção"
-            android:textSize="25dp"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            />
-        <EditText
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:inputType="textAutoCorrect"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Insira um texto"
-            android:textSize="25dp"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            />
-        <EditText
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:inputType="text"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Insira seu email"
-            android:textSize="25dp"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            />
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:inputType="textEmailAddress"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Insira seu endereço"
-            android:textSize="25dp"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            />
-        <EditText
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:inputType="textPostalAddress"
-            android:layout_marginBottom="30dp"
-            />
-    </LinearLayout>
-</ScrollView>
+
+</LinearLayout>

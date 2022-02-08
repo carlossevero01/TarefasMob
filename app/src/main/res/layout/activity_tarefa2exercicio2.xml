@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC"
+    tools:context=".tarefa2exercicio2">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarefa 2 Exercício 2"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="25dp"
+            />
+
+    <TextView
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Passe para a proxima tela para enviar dados para essa:"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        />
+    <Button
+            android:id="@+id/proximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="proximo"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            />
+        <TextView
+            android:id="@+id/caixa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".."
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            />
+
+</LinearLayout>

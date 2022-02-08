@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TarefasMob">
         <activity
+            android:name=".tarefa2exercicio2e2"
+            android:exported="false" />
+        <activity
+            android:name=".tarefa2exercicio2"
+            android:exported="false" />
+        <activity
+            android:name=".tarefa1e2"
+            android:exported="false" />
+        <activity
+            android:name=".tarefa2e2"
+            android:exported="false" />
+        <activity
+            android:name=".tarefa2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
