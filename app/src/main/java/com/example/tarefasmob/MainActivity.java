@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt1 = (Button) findViewById(R.id.tarefa1);
         Button bt2 = (Button) findViewById(R.id.tarefa2);
         Button bt3 = (Button) findViewById(R.id.tarefa2exercicio2);
+        Button bt4 = (Button) findViewById(R.id.tarefa4);
 
 
 
@@ -52,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        bt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(view.getId()==bt4.getId()){
+                    intent(4);
+                }
+            }
+        });
     }
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_main,menu);
@@ -73,14 +82,18 @@ public class MainActivity extends AppCompatActivity {
         Intent tarefa1 = new Intent(this,tarefa1e2.class);
         Intent tarefa2 = new Intent(this,tarefa2.class);
         Intent tarefa2exercicio2 = new Intent(this, tarefa2exercicio2.class);
+        Intent tarefa4 = new Intent(this,exerc4.class);
         if(ind==1){
            startActivity(tarefa1);
         }
-        if(ind==2){
+        else if(ind==2){
             startActivity(tarefa2);
         }
-        if(ind==3){
+        else if(ind==3){
             startActivity(tarefa2exercicio2);
+        }
+        else if(ind==4){
+            startActivity(tarefa4);
         }
     }
 }

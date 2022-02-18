@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TarefasMob">
         <activity
+            android:name=".exerc4"
+            android:exported="false" />
+        <activity
             android:name=".tarefa2exercicio2e2"
             android:exported="false" />
         <activity
