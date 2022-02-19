@@ -4,14 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt2 = (Button) findViewById(R.id.tarefa2);
         Button bt3 = (Button) findViewById(R.id.tarefa2exercicio2);
         Button bt4 = (Button) findViewById(R.id.tarefa4);
-
+        Button bt5 = (Button) findViewById(R.id.tarefa4exerc2);
 
 
         bt2.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        bt5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(view.getId()==bt5.getId()){
+                    intent(5);
+                }
+            }
+        });
     }
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_main,menu);
@@ -82,18 +87,16 @@ public class MainActivity extends AppCompatActivity {
         Intent tarefa1 = new Intent(this,tarefa1e2.class);
         Intent tarefa2 = new Intent(this,tarefa2.class);
         Intent tarefa2exercicio2 = new Intent(this, tarefa2exercicio2.class);
-        Intent tarefa4 = new Intent(this,exerc4.class);
-        if(ind==1){
-           startActivity(tarefa1);
+        Intent tarefa4 = new Intent(this, com.example.tarefasmob.tarefa4.class);
+        Intent tarefa4exerc2 = new Intent(this, com.example.tarefasmob.tarefa4exerc2.class);
+        switch(ind){
+            case 1: startActivity(tarefa1); break;
+            case 2: startActivity(tarefa2); break;
+            case 3: startActivity(tarefa2exercicio2); break;
+            case 4: startActivity(tarefa4); break;
+            case 5: startActivity(tarefa4exerc2); break;
+            default: break;
         }
-        else if(ind==2){
-            startActivity(tarefa2);
-        }
-        else if(ind==3){
-            startActivity(tarefa2exercicio2);
-        }
-        else if(ind==4){
-            startActivity(tarefa4);
-        }
+
     }
 }

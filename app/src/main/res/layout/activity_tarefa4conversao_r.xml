@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    tools:context=".tarefa4conversaoR">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter de Real "
+        android:textColor="#FFD700"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/valorEntReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCR"
+        android:layout_centerHorizontal="true"
+        android:hint="valor(BRL)"
+        android:inputType="number"
+        android:textColor="#B22222"
+        android:textColorHint="#B22222"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnCRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter p/ Peso"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/valorEntReal"
+        />
+
+    <TextView
+        android:id="@+id/resultCRP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCRP"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btnCRP"
+        android:text="00,00"
+        android:textAlignment="center"
+        android:textColor="#FFD700"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/btnCRD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter p/ Dolar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnCRP"
+        />
+    <TextView
+        android:id="@+id/resultCRD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00,00"
+        android:textColor="#FFD700"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/btnCRD"
+        android:layout_below="@+id/resultCRP"
+        android:layout_alignBaseline="@+id/btnCRD"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/textCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter de Peso "
+        android:textColor="#FFD700"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnCRD"
+        />
+    <EditText
+        android:id="@+id/valorEntPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="valor(UYU)"
+        android:textSize="20dp"
+        android:textColorHint="#B22222"
+        android:textColor="#B22222"
+        android:layout_below="@+id/textCP"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnCPR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter p/ Real"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/valorEntPeso"
+        />
+    <TextView
+        android:id="@+id/resultCPR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00,00"
+        android:textColor="#FFD700"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/btnCPR"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@+id/btnCPR"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/btnCPD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter p/ Dolar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnCPR"
+        />
+    <TextView
+        android:id="@+id/resultCPD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00,00"
+        android:textColor="#FFD700"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/btnCPD"
+        android:layout_alignBaseline="@+id/btnCPD"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/textCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter de Dolar"
+        android:textColor="#FFD700"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnCPD"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/valorEntDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="valor(USD)"
+        android:textSize="20dp"
+        android:textColorHint="#B22222"
+        android:textColor="#B22222"
+        android:layout_below="@+id/textCD"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnCDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter p/ Real"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/valorEntDolar"
+        />
+    <TextView
+        android:id="@+id/resultCDR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00,00"
+        android:textColor="#FFD700"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/btnCDR"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@+id/btnCDR"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnCDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCDR"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Converter p/ Peso" />
+    <TextView
+        android:id="@+id/resultCDP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00,00"
+        android:textColor="#FFD700"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/btnCDP"
+        android:layout_alignBaseline="@+id/btnCDP"
+        android:textAlignment="center"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>

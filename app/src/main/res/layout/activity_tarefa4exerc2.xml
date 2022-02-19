@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    tools:context=".tarefa4exerc2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textreal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" REAL(BRL):"
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textpeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textreal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Insira o valor atual do PESO(UYU):"
+            android:textColor="#FFD700"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/textdolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textpeso"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Insira o valor atual do DOLAR(USD):"
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/valorreal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1,00"
+            android:textColor="#8B0000"
+            android:background="#696969"
+            app:layout_constraintLeft_toRightOf="@id/textreal"
+            app:layout_constraintBaseline_toBaselineOf="@id/textreal"
+            android:textSize="20dp"
+
+            />
+        <EditText
+            android:id="@+id/valorpeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="BRL"
+            android:textColorHint="#8B0000"
+            android:background="#696969"
+            app:layout_constraintLeft_toRightOf="@id/textpeso"
+            app:layout_constraintBaseline_toBaselineOf="@id/textpeso"
+            android:textSize="20dp"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/valordolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="BRL"
+            android:textColorHint="#8B0000"
+            android:background="#696969"
+            app:layout_constraintLeft_toRightOf="@id/textdolar"
+            app:layout_constraintBaseline_toBaselineOf="@id/textdolar"
+            android:textSize="20dp"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/btnsalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textdolar" />
+
+
+        <TextView
+            android:id="@+id/textconvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btnsalvar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="Iniciar conversão:"
+            android:textColor="#FFD700"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IR para Conversão"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textconvert"
+            app:layout_constraintLeft_toRightOf="@+id/textconvert"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/textwarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textconvert"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="Se valores não forem salvos, será usado valores padrão"
+            android:textColor="#8B0000"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/textvpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor de cotação padrão do Peso: 8,37 UYU "
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textvpR"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/textvpd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor de cotação padrão do dolar: 0,19 BRL"
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textvpp"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/textvpR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reais"
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textwarning"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/textvpPD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor de cotação padrão do Dolar: 0,23 USD "
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textvpPR"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/textvpPR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor de cotação padrão do Real: 0,119 BRL"
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textvpP"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/textvpP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesos"
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textvpd"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/textvppP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor de cotação padrão do Peso: 43,04 UYU "
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textvppD"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/textvppD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor de cotação padrão do Real: 5,14 BRL"
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textvPD"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/textvPD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolar"
+            android:textColor="#FFD700"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textvpPD"
+            android:layout_marginTop="20dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.ShareActionProvider;
 import androidx.core.view.MenuItemCompat;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,14 +11,14 @@ import android.view.MenuItem;
 import android.widget.SearchView;
 import android.widget.Toast;
 
-public class exerc4 extends AppCompatActivity {
+public class tarefa4 extends AppCompatActivity {
     private MenuItem itemSearch;
     private SearchView search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exerc4);
+        setContentView(R.layout.activity_tarefa4);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 }
