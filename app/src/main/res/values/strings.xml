@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Tarefas Mobile</string>
+    <string-array name="lista">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+
+
+    </string-array>
+
 </resources>

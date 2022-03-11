@@ -1,54 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white"
     tools:context=".MainActivity">
+    <LinearLayout
 
-    <Button
-        android:id="@+id/tarefa1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="tarefa 1"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        />
-    <Button
-        android:id="@+id/tarefa2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="tarefa 2"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        />
-    <Button
-        android:id="@+id/tarefa2exercicio2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="tarefa 2 exerc2"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        />
-    <Button
-        android:id="@+id/tarefa4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="tarefa 4 Search"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        />
-    <Button
-        android:id="@+id/tarefa4exerc2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="tarefa 4 Conversor"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/tarefa1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 1"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:id="@+id/tarefa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 2"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:id="@+id/tarefa2exercicio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 2 exerc2"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:id="@+id/tarefa4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 4 Search"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:id="@+id/tarefa4exerc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 4 Conversor"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:id="@+id/tarefa5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 5 listview e progressBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:id="@+id/tarefa5ex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 5 LinearLayout e Layout Weight"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:id="@+id/tarefa5ex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 5 RelativeLayout"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:id="@+id/tarefa5ex3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tarefa 5 Calculo IMC"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
 
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

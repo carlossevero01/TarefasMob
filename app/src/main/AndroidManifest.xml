@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TarefasMob">
         <activity
+            android:name=".tarefa5ex3"
+            android:exported="false" />
+        <activity
+            android:name=".tarefa5ex2"
+            android:exported="false" />
+        <activity
+            android:name=".tarefa5ex1"
+            android:exported="false" />
+        <activity
+            android:name=".tarefa5"
+            android:exported="false" />
+        <activity
             android:name=".tarefa4conversaoR"
             android:exported="false" />
         <activity
